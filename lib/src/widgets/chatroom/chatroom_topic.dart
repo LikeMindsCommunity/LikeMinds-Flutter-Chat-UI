@@ -84,13 +84,13 @@ class LMChatRoomTopic extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 65,
-      decoration: BoxDecoration(
-        color: backGroundColor ?? kWhiteColor,
-      ),
-      child: GestureDetector(
-        onTap: onTap,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        height: 65,
+        decoration: BoxDecoration(
+          color: backGroundColor ?? kWhiteColor,
+        ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
           child: Row(children: [
